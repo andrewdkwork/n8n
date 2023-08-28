@@ -27,3 +27,4 @@ RUN \
 	chown node:node .n8n
 USER node
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+EXPOSE 8080
