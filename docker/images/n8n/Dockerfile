@@ -16,8 +16,9 @@ RUN set -eux; \
 	'armv7') apk del build-dependencies;; \
 	esac && \
 	find /usr/local/lib/node_modules/n8n -type f -name "*.ts" -o -name "*.js.map" -o -name "*.vue" | xargs rm && \
-	rm -rf /root/.npm \
-  ls
+	rm -rf /root/.npm
+
+RUN ls
 
 COPY docker-entrypoint.sh /
 
