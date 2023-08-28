@@ -18,9 +18,9 @@ RUN set -eux; \
 	find /usr/local/lib/node_modules/n8n -type f -name "*.ts" -o -name "*.js.map" -o -name "*.vue" | xargs rm && \
 	rm -rf /root/.npm
 
-RUN ls
+#RUN ls
 
-COPY docker-entrypoint.sh /
+#COPY docker-entrypoint.sh /
 
 RUN \
 	mkdir .n8n && \
